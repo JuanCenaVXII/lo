@@ -88,7 +88,7 @@
             if (lastPlayerMove === lastComputerMove) {
                 return moves[Math.floor(Math.random() * moves.length)];
             } else {
-                var nextPlayerMove = playerMoves[playerMoves.length - 2];
+                var nextPlayerMove = playerMoves[playerMoves.length + 1];
                 var predictedMove = getPredictedMove(nextPlayerMove);
                 return getWinningMove(predictedMove);
             }
